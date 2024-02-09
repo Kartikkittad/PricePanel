@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.ui {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.toggle {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(28, 110, 250);
+    color: #fff;
+    font-weight: 600;
+}
+
+.option {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    border: 1px solid;
+    border-color: rgb(219, 219, 219);
+    max-width: 300px;
+}
+
+h3 {
+    background-color: rgb(127, 174, 255);
+    font-size: 13px;
+    font-weight: 500;
+    max-width: 90px;
+    padding: 5px;
+    margin-top: -20px;
+    border-radius: 0 0 7px 7px;
+    margin-left: auto;
+    color: #fff;
+}
+
+h2 {
+    font-size: 18px;
+    text-align: start;
+}
+
+p {
+    text-align: start;
+    font-size: 13px;
+    line-height: 18px;
+    color: #8a8a8a;
+}
+
+hr {
+    margin-top: 23px;
+    background-color: #cecece;
+    opacity: 0.4;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: 13px;
+    text-align: start;
+    padding: 5px;
+    line-height: 20px;
+    align-items: center;
+    display: flex;
+
+    span {
+        font-weight: 800;
+    }
+
+    svg {
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        background-color: #e9e4ff;
+        padding: 2.5px;
+        border-radius: 50%;
+        color: #16006f;
+    }
+}
+
+.premium {
+    border: 3px solid rgb(127, 174, 255);
+}
+
+.option h2 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: start;
+    margin-top: 20px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls label {
+    font-weight: bold;
+}
+
+.btn {
+    align-items: start;
+    display: flex;
+    margin-top: 20px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.btn:hover {
+    background-color: rgb(28, 110, 250);
+    border: none;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+select {
+    padding: 4px;
+    border: none;
+    background-color: rgb(194, 255, 214);
+    border-radius: 10px;
+}
+
+.currency-toggle {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .option {
+        flex-basis: 100%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .toggle {
+        margin-top: 20px;
+    }
+
+    button {
+        justify-content: flex-end;
+    }
+}
